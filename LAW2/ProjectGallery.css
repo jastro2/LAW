@@ -1,0 +1,229 @@
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 400px;
+}
+
+.navbar {
+    z-index: 99999;
+    position: fixed;
+    top:0;
+    width: 100%;
+    border-bottom: 2px solid rgb(202, 179, 136);
+    background-color: black;
+    border-radius: 0;
+}
+
+.navbar-toggler-icon {
+    color: red;
+    background-image: url(https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-01-512.png);
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px 2px rgb(10, 10, 10);
+    transition: color .5s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(170, 170, 170);
+}
+
+.navbar .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size: 20px;
+    transition: color .5s;
+}
+
+.navbar .navbar-brand:hover {
+    color: rgb(170, 170, 170);
+}
+
+.heading {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 70px;
+    text-shadow: 0px 3px 4px rgb(202, 179, 136);
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.h1, h1 {
+    font-size: 50px;
+}
+
+.carousel-item {
+    max-width: 700px;
+    max-height: 700px;
+    margin: 0 auto;
+}
+
+
+/* ============ MAIN =========== */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.productSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.productName {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 30px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+
+
+/* ============= FOOTER =========== */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-top: 2px solid rgb(202, 179, 136);
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+/* ============== MEDIA QUERIES =============== */
+
+@media (min-width: 360px) {
+    .productSection {
+        flex-direction: column;
+    }
+
+    .bio {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .productName {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .productPic {
+        max-width: 400px;
+    }
+
+    .flex-container {
+        font-size: 10px;
+        padding: 10px 6px;
+        height: 60px;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 520px) {
+    .flex-container {
+        flex-direction: row;
+        height: 55px;
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width: 697px) {
+    
+}
+
+@media (min-width: 768px) {
+    .nav-item {
+        margin-right: 14px;
+    }
+
+    .navbar-nav {
+        padding-left: 230px;
+    }
+
+    .productSection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .productPic {
+        max-width: 400px;
+    }
+
+    .flex-container {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        padding-left: 80px;
+    }
+
+    .nav-item {
+        margin-right: 20px;
+    }
+
+    .navbar-nav {
+        padding-left: 360px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .navbar-nav {
+        padding-left: 570px;
+    }
+
+    .nav-item {
+        margin-right: 20px;
+    }
+
+    .productName {
+        text-align: left;
+        font-size: 45px;
+    }
+
+    #coolerName {
+        margin-left: 140px;
+    }
+
+    #lecturnName {
+        margin-left: 225px;
+    }
+
+    #urnName {
+        margin-left: 255px;
+    }
+
+    #flowerName {
+        margin-left: 175px;
+    }
+
+    .bio {
+        margin-left: 30px;
+        font-size: 24px;
+        padding-top: 20px;
+    }
+
+    .flex-container {
+        padding: 0 80px;
+    }
+
+}
+
+
+

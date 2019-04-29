@@ -1,0 +1,471 @@
+
+
+body {
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
+
+h1 {
+	color: black;
+	text-shadow: 0px 4px 3px white;
+	letter-spacing: 3px;
+	font-size: 90px;
+}
+
+hr {
+	width: 95%;
+	height: 2px;
+	background-color:rgb(250,250,250);
+	opacity: 0.5;
+}
+
+
+
+.topHead {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Staatliches', sans-serif;
+	font-size: 65px;
+	letter-spacing: 4px;
+	margin-top: 80px;
+	padding-bottom: 20px;
+	text-shadow: 0px 1px 2px rgb(202, 179, 136);
+}
+
+/*============ NAVBAR =============*/
+
+.navbar {
+	z-index: 99999;
+	position: fixed;
+	top:0;
+	width: 100%;
+	border-bottom: 2px solid rgb(202, 179, 136);
+	background-color: black;
+	border-radius: 0;
+}
+
+button.navbar-toggler.collapsed {
+	color: white;
+}
+
+button.navbar-toggler {
+	color: white;
+	border: 1px solid white;
+	background: url(https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-01-512.png);
+}
+
+.navbar-toggler-icon {
+	color: red;
+	background-image: url(https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-01-512.png);
+}
+
+.navbar-nav .nav-link {
+	color: white;
+	font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px 2px rgb(10, 10, 10);
+    transition: color .5s;
+}
+
+.navbar-nav .nav-link:hover {
+	color: rgb(170, 170, 170);
+}
+
+.navbar .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+	color:white;
+    font-size: 20px;
+    transition: color .5s;
+}
+
+.navbar .navbar-brand:hover {
+	color: rgb(170, 170, 170);
+}
+
+
+
+.ruler {
+	font-size: 26px;
+}
+
+/*========== LIVE ACTION SPIRIT ===========*/
+
+iframe {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+#operate {
+	text-shadow: 0px .5px 1px rgb(202, 179, 136);
+	font-size: 30px;
+	margin: 10px 0;
+	font-family: 'Staatliches', sans-serif;
+	letter-spacing: 2px
+}
+
+
+/*=========== BIO SECTION ============*/
+.bioSection {
+	display: flex;
+	flex-direction: row;
+}
+
+.bioName {
+	font-family: 'Staatliches', sans-serif;
+	font-size: 80px;
+	text-shadow: 0px 3px 4px rgb(202, 179, 136);
+	letter-spacing: 3px;
+	display: block;
+	padding-bottom: 10px;
+}
+
+
+/*========== FOOTER =============*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+	width: 100%;
+	position: relative;
+	height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-top: 2px solid rgb(202, 179, 136);
+    padding-left: 14px;
+    padding-right: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*========== MEDIA QUERIES =============*/
+@media (min-width: 320px) {
+	iframe{
+		max-width: 310px;
+	}
+
+	.topHead {
+		font-size: 40px;
+	}
+
+	.aboutIntro {
+		padding: 10px 14px;
+		width: 100%;
+		text-align: center;
+		font-size: 16px;
+		margin: 0;
+	}
+
+	#operate {
+		text-align: center;
+		font-size: 34px;
+	}
+
+	.bioSection {
+		flex-direction: column;
+	}
+
+	.bio {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.bioName {
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.bioPic {
+		max-width: 250px;
+	}
+
+	.flex-container {
+		font-size: 8px;
+		padding: 10px 4px;
+		height: 60px;
+		flex-direction: column;
+	}
+
+}
+
+
+@media only screen and (min-width: 360px) {
+	iframe {
+		max-width: 360px;
+	}	
+
+	hr {
+		width: 95%;
+		margin-left: 10px;
+	}
+
+	.topHead {
+		font-size: 50px;
+		font-family: 'Staatliches', sans-serif;
+	}
+
+	#operate {
+		font-size: 40px;
+	}
+
+	.bioSection {
+		flex-direction: column;
+	}
+
+	.bio {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.bioName {
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.bioPic {
+		max-width: 310px;
+	}
+
+	.flex-container {
+		font-size: 10px;
+		padding: 10px 6px;
+		height: 60px;
+	}
+}
+
+@media (min-width: 438px) {
+	.bioPic {
+		max-width: 360px;
+		height: auto;
+	}
+
+	iframe {
+		max-width: 400px;
+	}
+}
+
+@media (min-width: 520px) {
+	iframe {
+		max-width: 500px;
+		margin-left: 50px;
+	}
+
+	.bio {
+		padding: 0;
+		width: 100%;
+	}
+
+	.bioName {
+		font-size: 80px;
+		text-align: center;
+		margin-left: 40px;
+	}
+
+	.bioPic {
+		max-width: 460px;
+		padding-left: 0px;
+		margin-left: 10px;
+	}
+
+	.flex-container {
+		flex-direction: row;
+		height: 55px;
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 660px) {
+	iframe {
+		margin-left: 80px;
+	}
+
+	.navbar-nav {
+		padding-left: 140px;
+	}
+
+	.bioName {
+		margin-left: 0px;
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 20px;
+	}
+
+	.nav-item {
+		margin-right: 14px;
+	}
+
+	.navbar-nav {
+		padding-left: 230px;
+	}
+
+	iframe {
+		max-width: 600px;
+		margin-left: 100px;
+	}
+
+	.topHead {
+		font-size: 70px;
+	}
+
+	.aboutIntro {
+		width: 90%;
+		margin-left: 30px;
+		text-align: center;
+	}
+
+	.bioName {
+		text-align: center;
+		padding-right: 20px;
+		letter-spacing: 7px;
+	}
+
+	.bioPicSection {
+		margin-left: 80px;
+	}
+
+	.bioPic {
+		width: 500px;
+		height: auto;
+	}
+
+	.bio {
+		width: 100%;
+		font-size: 20px;
+		text-align: left;
+	}
+
+	.flex-container {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar-brand {
+		padding-left: 80px;
+	}
+
+	.nav-item {
+		margin-right: 20px;
+	}
+
+	.navbar-nav {
+		padding-left: 360px;
+	}
+
+	iframe {
+		margin-left: 230px;
+	}
+
+	.bioSection {
+		flex-direction: row;
+	}
+
+	.bioPicSection {
+		margin: 5px 34px 0 0;
+	}
+
+	.bio {
+		font-size: 17px;
+	}
+
+	.flex-container {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.navbar-nav {
+		padding-left: 570px;
+	}
+
+	.nav-item {
+		margin-right: 20px;
+	}
+
+	iframe {
+		margin-left: 350px;
+	}
+
+	hr {
+		margin: 30px auto;
+	}
+
+	.topHead {
+		margin-left: 0;
+	}
+
+	.aboutIntro {
+		margin: 0 100px 0 70px;
+		padding: 10px 30px;
+		font-size: 20px;
+	}
+
+	#operate {
+		margin-left: 0px;
+		font-size: 40px;
+	}
+
+	.bioPic {
+		margin: 5px 0 0 0;
+	}
+
+	.bio {
+		font-size: 20px;;
+	}
+
+	.flex-container {
+		padding: 0 80px;
+	}
+}
+
+@media (min-width: 1300px) {
+	iframe {
+		margin-left: 400px;
+	}
+
+	.navbar-nav {
+		padding-left: 500px;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+  	.topHead {
+  		margin-left: 60px;
+  	}
+
+ 	iframe {
+  		margin-left: 150px;
+  	}
+
+  	.aboutIntro {
+  		margin-left: 50px;
+  	}
+
+  	#operate {
+  		margin-left: 60px;
+  	}
+
+  	.bioPicSection {
+  		margin-left: 110px;
+  	}
+
+  	.bio {
+  		margin-left: 30px;
+  	}
+
+  	.flex-container {
+  		width: 107%;
+  	}
+}

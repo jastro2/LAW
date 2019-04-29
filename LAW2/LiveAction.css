@@ -1,0 +1,363 @@
+/**
+* This is the CSS file that will contain all of the styles, themes, and all the same.
+* @author: Brandon Phillips
+* @author: Jordan Brown
+* @version: Feb 10, 2019
+*
+**/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: rgb(28, 28, 28);
+	color: white;
+	font-size: 16px;
+	background-size: cover;
+	background-position: center;
+}
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 54px;
+	padding-top: 70px;
+	margin-bottom: 10px;
+}
+
+hr {
+	border-top: 1px solid rgb(202, 179, 136);
+	width: 95%;
+}
+
+/* Add in smooth hover effect in JS */
+a.scroll {
+		color: white;
+		position: relative;
+		top: 4em;
+		font-size: 50px;
+}
+
+a.scroll {
+	transition: color 0.5s ease;
+}
+
+a.scroll:hover {
+	color: rgb(40, 40, 40);
+}
+
+.description {
+	margin: 40px;
+}
+
+.navbar {
+	z-index: 99999;
+	position: fixed;
+	top:0;
+	width: 100%;
+	border-bottom: 2px solid rgb(202, 179, 136);
+	background-color: black;
+	border-radius: 0;
+}
+
+button.navbar-toggler.collapsed {
+	color: white;
+}
+
+button.navbar-toggler {
+	color: white;
+	border: 1px solid white;
+	background: url(https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-01-512.png);
+}
+
+.navbar-toggler-icon {
+	color: red;
+	background-image: url(https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-01-512.png);
+}
+
+.navbar-nav .nav-link {
+	color: white;
+	font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px 2px rgb(10, 10, 10);
+    transition: color .5s;
+}
+
+.navbar-nav .nav-link:hover {
+	color: rgb(170, 170, 170);
+}
+
+.navbar .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+	color:white;
+    font-size: 20px;
+    transition: color .5s;
+}
+
+.navbar .navbar-brand:hover {
+	color: rgb(170, 170, 170);
+}
+
+.landingPage {
+	font-family: 'Staatliches', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 14px;
+	text-shadow: 0 4px 3px black;
+	background-image: url(https://i.imgur.com/wuoDQ0A.jpg);
+	color: white;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vmin;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.featured {
+	font-family: 'Staatliches', sans-serif;
+	font-size: 1em;
+	text-shadow: 0 4px 3px black;
+	text-align: center;
+	letter-spacing: 20px;
+}
+
+img { 
+	max-width: 600px;
+	height: auto;	
+}
+
+.card {
+	padding: 6px;
+	margin-top: 26px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-top: 2px solid rgb(202, 179, 136);
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+
+/*Adjust landscape mode-- figure something
+out for down arrow in landscape. When applied to landscape,
+it affects all sizes.*/
+@media (min-width: 360px) {
+
+	#landing {
+		font-size: 34px;
+		margin-left: 14px;
+		margin-top: 28px;
+	}
+
+	a.scroll {
+		visibility: hidden;
+	}
+
+	img {
+		max-width: 400px;
+		height: auto;
+	}
+
+	.card {
+		max-width: 400px;
+		margin: 10px auto;
+	}
+
+	.featured {
+		font-size: 2.4em;
+		letter-spacing: 4px;
+	}
+
+	.flex-container {
+		font-size: 10px;
+		padding: 10px 6px;
+		height: 60px;
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 480px) {
+
+	#landing {
+		font-size: 50px;
+	}
+
+	.featured {
+		font-size: 3em;
+		letter-spacing: 4px;
+	}
+}
+
+@media (min-width: 520px) {
+
+	#landing {
+		margin-left: 0;
+	}
+
+	img {
+		max-width: 500px;
+		height: auto;
+	}
+
+	.card {
+		max-width: 500px;
+		margin: 10px auto;
+	}
+
+	.flex-container {
+		flex-direction: row;
+		height: 55px;
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 697px) {
+
+	.navbar-brand {
+		margin-left: 0;
+	}
+
+	.nav-item {
+		margin-right: 20px;
+	}
+
+	.navbar-nav {
+		padding-left: 120px;
+	}
+
+	.description {
+		margin: 20px;
+	}
+
+	.featured {
+		margin: -45px 4px 0 4px;
+		font-size: 50px;
+	}
+
+	.landingHead {
+		font-size: 30px;
+		color: white;
+	}
+
+	img {
+		max-width: 700px;
+		height: auto;
+	}
+
+	.card {
+		max-width: 600px;
+		margin: 10px auto;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.navbar-brand {
+		margin-left: 0;
+	}
+
+	.nav-item {
+		margin-right: 10px;
+	}
+
+	.navbar-nav {
+		padding-left: 200px;
+	}
+
+	#landing {
+		font-size: 40px;
+	}
+
+	img {
+		max-width: 600px;
+		height: auto;
+	}
+
+	.card {
+		max-width: 600px;
+		height: auto;
+		margin: 10px auto;
+	}
+
+	.flex-container {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	
+	.navbar-brand {
+		margin-left: 80px;
+	}
+
+	.nav-item {
+		margin-right: 20px;
+	}
+
+	.navbar-nav {
+		padding-left: 360px;
+	}
+
+	#landing {
+		font-size: 60px;
+	}
+
+	.featured {
+		margin: -45px 4px 0 4px;
+		font-size: 70px;
+	}
+
+	a.scroll {
+		visibility: visible;
+	}
+
+	img {
+		max-width: 700px;
+		height: auto;
+	}
+
+	.card {
+		max-width: 700px;
+		height: auto;
+		margin: 10px auto;
+	}
+
+	#firstRow {
+		height: 450px;
+	}
+
+	#secondRow {
+		height: 500px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.navbar-brand {
+		margin-left: 80px;
+	}
+
+	.nav-item {
+		margin-right: 20px;
+	}
+
+	.navbar-nav {
+		padding-left: 570px;
+	}
+
+	.flex-container {
+		padding: 0 80px;
+	}
+}
