@@ -10,6 +10,16 @@ img {
     max-width: 600px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#facebook {
+    color: blue;
+    padding-left: 4px;
+}
+
 .navbar {
     z-index: 99999;
     position: fixed;
@@ -116,12 +126,12 @@ img {
     }
 
     .productName {
-        font-size: 60px;
+        font-size: 45px;
         text-align: center;
     }
 
     .productPic {
-        max-width: 400px;
+        max-width: 320px;
     }
 
     .flex-container {
@@ -132,7 +142,11 @@ img {
     }
 }
 
-@media (min-width: 520px) {
+@media (min-width: 500px) {
+    .productPic {
+        max-width: 430px;
+    }
+
     .flex-container {
         flex-direction: row;
         height: 55px;
@@ -141,9 +155,6 @@ img {
 
 }
 
-@media (min-width: 697px) {
-    
-}
 
 @media (min-width: 768px) {
     .nav-item {
@@ -157,10 +168,6 @@ img {
     .productSection {
         display: flex;
         flex-direction: row;
-    }
-
-    .productPic {
-        max-width: 400px;
     }
 
     .flex-container {
@@ -192,35 +199,22 @@ img {
         margin-right: 20px;
     }
 
-    .productName {
-        text-align: left;
-        font-size: 45px;
-    }
-
-    #coolerName {
-        margin-left: 140px;
-    }
-
-    #lecturnName {
-        margin-left: 225px;
-    }
-
-    #urnName {
-        margin-left: 255px;
-    }
-
-    #flowerName {
-        margin-left: 175px;
-    }
-
     .productPic {
         max-width: 500px;
     }
 
+    .specs {
+        font-size: 18px;
+    }
+
+    .productName {
+        margin-left: 25px;
+    }
+
     .bio {
         margin-left: 30px;
-        font-size: 24px;
-        padding-top: 20px;
+        font-size: 22px;
+        padding-top: 0;
     }
 
     .flex-container {

@@ -1,11 +1,3 @@
-/**
-* This is the CSS file that will contain all of the styles, themes, and all the same.
-* @author: Brandon Phillips
-* @author: Jordan Brown
-* @version: Feb 10, 2019
-*
-**/
-
 body {
 	font-family: 'Roboto', sans-serif;
 	background: rgb(28, 28, 28);
@@ -31,7 +23,6 @@ hr {
 	width: 95%;
 }
 
-/* Add in smooth hover effect in JS */
 a.scroll {
 		color: white;
 		position: relative;
@@ -150,9 +141,6 @@ img {
 }
 
 
-/*Adjust landscape mode-- figure something
-out for down arrow in landscape. When applied to landscape,
-it affects all sizes.*/
 @media (min-width: 360px) {
 
 	#landing {
@@ -333,14 +321,6 @@ it affects all sizes.*/
 		height: auto;
 		margin: 10px auto;
 	}
-
-	#firstRow {
-		height: 450px;
-	}
-
-	#secondRow {
-		height: 500px;
-	}
 }
 
 @media (min-width: 1200px) {
@@ -355,6 +335,26 @@ it affects all sizes.*/
 
 	.navbar-nav {
 		padding-left: 570px;
+	}
+
+	.card {
+		max-width: 515px;
+	}
+
+	img {
+		max-width: 500px;
+	}
+
+	img#firstRow {
+		width: 500px;
+	}
+
+	#firstRow {
+		height: 450px;
+	}
+
+	#secondRow {
+		height: 450px;
 	}
 
 	.flex-container {
