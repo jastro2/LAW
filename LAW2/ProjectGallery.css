@@ -7,7 +7,7 @@ body {
 }
 
 img {
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .navbar {
@@ -211,6 +211,10 @@ img {
 
     #flowerName {
         margin-left: 175px;
+    }
+
+    .productPic {
+        max-width: 500px;
     }
 
     .bio {
