@@ -13,11 +13,18 @@ img {
 a {
     text-decoration: none;
     color: white;
+    transition: color .5s;
 }
 
-#facebook {
-    color: blue;
-    padding-left: 4px;
+a:hover {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    transition: color .5s;
+}
+
+hr {
+    border-top: 1px solid rgb(202, 179, 136);
+    width: 95%;
 }
 
 .navbar {
@@ -30,9 +37,22 @@ a {
     border-radius: 0;
 }
 
+button.navbar-toggler.collapsed {
+    color: white;
+}
+
+button.navbar-toggler {
+    color: white;
+    border: 1px solid white;
+    background: url(https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-01-512.png);
+}
+
+button:focus {
+    outline: none;
+}
+
 .navbar-toggler-icon {
-    color: red;
-    background-image: url(https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-01-512.png);
+    background-image: url(https://21thirteen.com/wp-content/uploads/2016/03/hamburger-menu.jpg);
 }
 
 .navbar-nav .nav-link {
@@ -71,14 +91,9 @@ a {
     font-size: 50px;
 }
 
-.carousel-item {
-    max-width: 700px;
-    max-height: 700px;
-    margin: 0 auto;
-}
-
 
 /* ============ MAIN =========== */
+
 .container {
     display: flex;
     flex-direction: row;
@@ -93,12 +108,11 @@ a {
     font-family: 'Staatliches', sans-serif;
     font-size: 30px;
     display: block;
-    padding-bottom: 10px;
+    padding: 20px 0 10px 0;
 }
 
-
-
 /* ============= FOOTER =========== */
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -113,9 +127,19 @@ a {
     padding-right: 14px;
 }
 
+#facebook {
+    color: rgb(0,119,181);
+    transition: color .5s;
+}
+
+#facebook:hover {
+    color: rgb(100, 219, 250);
+}
+
 /* ============== MEDIA QUERIES =============== */
 
 @media (min-width: 360px) {
+
     .productSection {
         flex-direction: column;
     }
@@ -135,28 +159,27 @@ a {
     }
 
     .flex-container {
-        font-size: 10px;
+        font-size: 12px;
         padding: 10px 6px;
-        height: 60px;
-        flex-direction: column;
+        height: 75px;
+        flex-direction: column-reverse;
+    }    
+
+    #facebook {
+        padding-left: 10px;
     }
 }
 
 @media (min-width: 500px) {
+
     .productPic {
         max-width: 430px;
     }
-
-    .flex-container {
-        flex-direction: row;
-        height: 55px;
-        font-size: 12px;
-    }
-
 }
 
 
 @media (min-width: 768px) {
+
     .nav-item {
         margin-right: 14px;
     }
@@ -171,11 +194,23 @@ a {
     }
 
     .flex-container {
-        font-size: 16px;
+        flex-direction: row;
+        height: 55px;
     }
 }
 
+@media (min-width: 860px) {
+
+    .flex-container {
+        font-size: 14px;
+    }
+
+    #facebook {
+        padding-left: 26px;
+    }
+
 @media (min-width: 992px) {
+
     .navbar-brand {
         padding-left: 80px;
     }
@@ -191,6 +226,7 @@ a {
 }
 
 @media (min-width: 1200px) {
+
     .navbar-nav {
         padding-left: 570px;
     }
@@ -220,7 +256,6 @@ a {
     .flex-container {
         padding: 0 80px;
     }
-
 }
 
 

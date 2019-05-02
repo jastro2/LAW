@@ -7,40 +7,24 @@ body {
 	background-position: center;
 }
 
-html {
-	height: 100%;
-	box-sizing: border-box;
-}
-
-h1 {
-	font-size: 54px;
-	padding-top: 70px;
-	margin-bottom: 10px;
-}
-
 hr {
 	border-top: 1px solid rgb(202, 179, 136);
 	width: 95%;
 }
 
-a.scroll {
-		color: white;
-		position: relative;
-		top: 4em;
-		font-size: 50px;
+a {
+    text-decoration: none;
+    color: white;
+    transition: color .5s;
 }
 
-a.scroll {
-	transition: color 0.5s ease;
+a:hover {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    transition: color .5s;
 }
 
-a.scroll:hover {
-	color: rgb(40, 40, 40);
-}
-
-.description {
-	margin: 40px;
-}
+/* ========== NAVBAR ======== */
 
 .navbar {
 	z-index: 99999;
@@ -63,8 +47,7 @@ button.navbar-toggler {
 }
 
 .navbar-toggler-icon {
-	color: red;
-	background-image: url(https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-01-512.png);
+	background-image: url(https://21thirteen.com/wp-content/uploads/2016/03/hamburger-menu.jpg);
 }
 
 .navbar-nav .nav-link {
@@ -91,6 +74,8 @@ button.navbar-toggler {
 	color: rgb(170, 170, 170);
 }
 
+/* ======== LANDING ========== */
+
 .landingPage {
 	font-family: 'Staatliches', sans-serif;
 	text-transform: uppercase;
@@ -108,17 +93,27 @@ button.navbar-toggler {
 	text-align: center;
 }
 
+a.scroll {
+		color: white;
+		position: relative;
+		top: 4em;
+		font-size: 50px;
+}
+
+a.scroll {
+	transition: color 0.5s ease;
+}
+
+a.scroll:hover {
+	color: rgb(40, 40, 40);
+}
+
 .featured {
 	font-family: 'Staatliches', sans-serif;
 	font-size: 1em;
 	text-shadow: 0 4px 3px black;
 	text-align: center;
 	letter-spacing: 20px;
-}
-
-img { 
-	max-width: 600px;
-	height: auto;	
 }
 
 .card {
@@ -140,13 +135,24 @@ img {
     padding-right: 14px;
 }
 
+#facebook {
+    color: rgb(0,119,181);
+    transition: color .5s;
+}
+
+#facebook:hover {
+	color: rgb(100, 219, 250);
+}
+
+/* =========== MEDIA QUERIES ========= */
+
 
 @media (min-width: 360px) {
 
 	#landing {
 		font-size: 34px;
 		margin-left: 14px;
-		margin-top: 28px;
+		padding-top: 120px;
 	}
 
 	a.scroll {
@@ -154,8 +160,7 @@ img {
 	}
 
 	img {
-		max-width: 400px;
-		height: auto;
+		max-width: 330px;
 	}
 
 	.card {
@@ -166,14 +171,25 @@ img {
 	.featured {
 		font-size: 2.4em;
 		letter-spacing: 4px;
+		margin-top: 16px;
 	}
 
-	.flex-container {
-		font-size: 10px;
-		padding: 10px 6px;
-		height: 60px;
-		flex-direction: column;
+	#moreInfo {
+		margin: 10px 40px 20px 40px;
+		font-size: 16px;
+		text-align: center;
 	}
+
+    .flex-container {
+        font-size: 12px;
+        padding: 10px 6px;
+        height: 75px;
+        flex-direction: column-reverse;
+    }   
+
+    #facebook {
+        padding-left: 10px;
+    }
 }
 
 @media (min-width: 480px) {
@@ -182,9 +198,22 @@ img {
 		font-size: 50px;
 	}
 
+	img {
+		max-width: 385px;
+	}
+
+	.card {
+		max-width: 400px;
+		margin: 10px auto;
+	}
+
 	.featured {
 		font-size: 3em;
 		letter-spacing: 4px;
+	}
+
+	#moreInfo {
+		margin: 10px 40px 20px 40px;
 	}
 }
 
@@ -195,19 +224,13 @@ img {
 	}
 
 	img {
-		max-width: 500px;
+		max-width: 465px;
 		height: auto;
 	}
 
 	.card {
-		max-width: 500px;
+		max-width: 480px;
 		margin: 10px auto;
-	}
-
-	.flex-container {
-		flex-direction: row;
-		height: 55px;
-		font-size: 12px;
 	}
 }
 
@@ -229,24 +252,23 @@ img {
 		margin: 20px;
 	}
 
-	.featured {
-		margin: -45px 4px 0 4px;
-		font-size: 50px;
-	}
-
 	.landingHead {
 		font-size: 30px;
 		color: white;
 	}
 
 	img {
-		max-width: 700px;
+		max-width: 495px;
 		height: auto;
 	}
 
 	.card {
-		max-width: 600px;
+		max-width: 700px;
 		margin: 10px auto;
+	}
+
+	#moreInfo {
+		margin: 10px 60px 20px 76px;
 	}
 }
 
@@ -269,19 +291,36 @@ img {
 	}
 
 	img {
-		max-width: 600px;
+		max-width: 585px;
 		height: auto;
 	}
 
 	.card {
 		max-width: 600px;
 		height: auto;
-		margin: 10px auto;
 	}
 
-	.flex-container {
-		font-size: 16px;
+	#moreInfo {
+		margin: 10px 40px 20px 95px;
+		text-align: left;
+		font-size: 18px;
 	}
+
+    .flex-container {
+        flex-direction: row;
+        height: 55px;
+    }
+}
+
+@media (min-width: 860px) {
+
+	.flex-container {
+        font-size: 14px;
+    }
+
+    #facebook {
+        padding-left: 26px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -303,7 +342,6 @@ img {
 	}
 
 	.featured {
-		margin: -45px 4px 0 4px;
 		font-size: 70px;
 	}
 
@@ -311,15 +349,34 @@ img {
 		visibility: visible;
 	}
 
-	img {
-		max-width: 700px;
-		height: auto;
+	.featured {
+		padding-top: 75px;
 	}
 
 	.card {
-		max-width: 700px;
-		height: auto;
-		margin: 10px auto;
+		max-width: 515px;
+	}
+
+	img {
+		max-width: 435px;
+	}
+
+	img#firstRow {
+		width: 500px;
+	}
+
+	#firstRow {
+		height: 450px;
+	}
+
+	#secondRow {
+		height: 450px;
+	}
+
+	#moreInfo {
+		text-align: center;
+		margin: 20px 0 30px 0;
+		font-size: 24px;
 	}
 }
 
